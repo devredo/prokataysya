@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Франшиза ПРОКАТайся</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=1200px">-->
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--<link rel="apple-touch-icon" href="ссылка на фавикон для apple">
+	<link rel="apple-touch-icon" sizes="72x72" href="ссылка на фавикон для apple">
+	<link rel="apple-touch-icon" sizes="114x114" href="ссылка на фавикон для apple"> -->
+
+    <!-- <meta property="og:image" content="ссылка на картинку для превью"> -->
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <div class="gradient-wrap">
+            <header class="header-page">
+                <button onclick="topFunction()" id="topBtn"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2231 9.77692C18.9953 8.54915 17.0047 8.54915 15.7769 9.77692L3.92082 21.6332C2.69306 22.8609 2.69306 24.8514 3.9208 26.0792C5.14855 27.3069 7.13913 27.3069 8.36688 26.0792L18 16.4461L27.6332 26.0792C28.8609 27.3069 30.8514 27.3069 32.0792 26.0792C33.3069 24.8514 33.3069 22.8609 32.0792 21.6332L20.2231 9.77692Z" fill="#222223" />
+                    </svg>
+
+                </button>
+                <div class="container">
+                    <div class="header-line">
+                    <a href="/index.html" class="logo"><img src="/assets/img/logo_prokat.svg" alt=""></a>
+                        <div>
+                            <ul class="nav-menu">
+                                <li class="nav-menu-item"><a class="nav-link" href="#" data-scroll-to="advantages-slider">Чому ми</a></li>
+                                <li class="nav-menu-item"><a class="nav-link" href="#" data-scroll-to="third-advantages-wrap">Переваги</a></li>
+                                <li class="nav-menu-item"><a class="nav-link" href="#" data-scroll-to="steps-wrap">Етапи</a></li>
+                                <li class="nav-menu-item"><a class="nav-link" href="#" data-scroll-to="faq-section">FAQ</a></li>
+                                <li class="nav-menu-item"><a class="nav-link" href="#" data-scroll-to="about-us-wrap">Про нас</a></li>
+                                <li class="nav-menu-item"><a class="nav-link" href="#" data-scroll-to="tariffs-slider">Тарифи</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-page__hamburger">
+                            <button class="btn-menu" type="button" data-popup="popup-menu-two">
+                                <span class="btn-menu__box">
+                                    <span class="btn-menu__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-wrap">
+                        <div class="hero-info">
+                            <div class="main-title">ФРАНШИЗА ПР<span><svg width="43" height="55" viewBox="0 0 43 55" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="43" height="55" fill="url(#pattern0)" />
+                                        <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                <use xlink:href="#image0_114_376" transform="scale(0.0232558 0.0181818)" />
+                                            </pattern>
+                                            <image id="image0_114_376" width="43" height="55" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAA3CAMAAACil0MSAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAC6UExURQAAAO9/AO97APF8AO96AO97Au95AO97Ae98Ae96AfJ7AO9/AO97Ae97Au9/AO99A+9wAO97Au96AO97Ae97AO95AO96AO96Ae93AO97AO95AO96AO97AO17AO97Ae96AOx6AO97AfCDEfWtYfOcQfzmz/////rWr/GMIfWtYP737/nOoPGLIPa1cPWsYPOcQPjFkPvev/KUMPnNn/3u3/SkUP3v4PrWsPe9gPGLIfKUMf3v3/jFj/e9fzgbSD0AAAAhdFJOUwAQQG9/n1C/769fIN+AMGAQj2Dvj4+v3yC/P59fcM9vYLhFSGsAAAABYktHRCZaCJi1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5wYFDBE648SHzgAAAAFvck5UAc+id5oAAAHeSURBVEjHvZTZeoIwEIVTBcWK1ZZaUOwS1Kip1gVr69L3f60mwSxgErzo13M1hJ/DzGQSAP5JN5Wq47quU6uUgdU6FPIat2ay6XowL7/V1Hu2oEa+zvvOh3o1LqzbHjTJL8DtwvtkSDXSwbWi1xhRTTTOzYtcpzMijEUaHcEaynpHcx7ec/TBUNQCfYi4YsrgrCVaibhut4UJWsOCscmWdAPLuEHRihGFK7QRcUBb8Whmh2iRT6JuZqcolQ9dwpoHAUK8lfETGUULCtcoEXFIZtHGrtBSPljbAOGnWpzqu0PjdJ5nEzFqjI1E/LXGCH3n4Z3cjVDtw/4AZ0f1p/R7OWo92d8FMd1uphjLyuHoSNb4rDmEdVg0YwcBL1fotOc6sDX+p76Yh+zQaJWlHLA5C2nIXxwV8TWWcsxYlgTOlsf5XcuU8BTILntsh5h+VDarIZuf8HzeYtp19sdxorLwRNe2LIXBmc22Y7ae5HtL19J0kai2mbFdA8FGXgkqbfl+mNVX797Qisa5e9I6xWGUv1Qtp1kprDSLGBR1Z+pF2LlgwbMeDSKgkT7lAdBKdwM5elRXXxeYFBXhGIBrYRtagO0ogV9Ky1J0nrngtRwF4I3m0YuuQSnd7V9J/ol+ARs/x3DUyadnAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTA2LTA1VDEyOjE3OjQxKzAwOjAwLl2IfQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wNi0wNVQxMjoxNzo0MSswMDowMF8AMMEAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjMtMDYtMDVUMTI6MTc6NTgrMDA6MDBRJ1RTAAAAAElFTkSuQmCC" />
+                                        </defs>
+                                    </svg>
+                                </span>КАТайся</div>
+                            <div class="hero-text pb20">Інноваційний бізнес з рентабельністю понад 80%. Отримайте презентацію всіх варіантів партнерства та детальну фінансову модель.
+                            </div>
+                            <a href="#" data-scroll-to="form-section-wrap" class="hero-btn">Дізнатись більше</a>
+                        </div>
+                        <div class="hero-img">
+                            <img src="./assets/img/franchise.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <div class="content">
+
+            <section class="advantages-section">
+                <div class="container">
+                    <div class="advantages-wrap">
+                        <div class="advantages-item">
+                            <div class="advantages-icon"><img src="./assets/img/coin-icon.svg" alt=""></div>
+                            <div class="advantages-title">Прибуток</div>
+                            <div class="advantages-text">від 200 000 грн</div>
+                        </div>
+                        <div class="advantages-item">
+                            <div class="advantages-icon"><img src="./assets/img/time-icon.svg" alt=""></div>
+                            <div class="advantages-title">Час на запуск</div>
+                            <div class="advantages-text">від 7 днів</div>
+                        </div>
+                        <div class="advantages-item">
+                            <div class="advantages-icon"><img src="./assets/img/cash-icon.svg" alt=""></div>
+                            <div class="advantages-title">Окупність</div>
+                            <div class="advantages-text">з 1-го місяця</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="second-advantages-section">
+                <div class="container">
+                    <div class="subtitle">Чому шерінг - це бізнес майбутнього?</div>
+                    <div class="advantages-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide advantages-slide">
+                                <div class="second-advantages-item">
+                                    <img class="second-advanages-img" src="./assets/img/rent-img.png" alt="">
+                                    <div class="second-advantages-text">Жителі сучасних міст все активніше користуються послугами <span>шеринг-сервісів, як альтернативи громадському транспорту та таксі.</span></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide advantages-slide">
+                                <div class="second-advantages-item">
+                                    <img class="second-advanages-img" src="./assets/img/growth-img.png" alt="">
+                                    <div class="second-advantages-text">Ринок переживає бурхливе зростання, що становить <span>в середньому 50% на рік.</span></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide advantages-slide third">
+                                <div class="second-advantages-item">
+                                    <img class="second-advanages-img" src="./assets/img/city-img.png" alt="">
+                                    <div class="second-advantages-text">Шеринг сьогодні- це не просто послуга, а <span>черговий етап розвитку сучасних міст.</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="third-advantages-section">
+                <div class="container">
+                    <div class="third-advantages-wrap">
+                        <div class="subtitle">У чому переваги бізнес-моделі шерингу «ПРОКАТайся»?</div>
+
+                        <div class="third-advantages-wrappper">
+                            <div class="advantages-item">
+                                <div class="third-advantages-item">
+                                    <div class="advantage-number">01</div>
+                                    <div class="third-advantages-title">Висока<br> рентабельність</div>
+                                    <div class="third-advantages-text">Згідно з нашою бізнес-моделлю, рентабельність шерингу досягає 84,1%.</div>
+                                </div>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="third-advantages-item">
+                                    <div class="advantage-number">02</div>
+                                    <div class="third-advantages-title">Низькі витрати<br> на рекламу</div>
+                                    <div class="third-advantages-text">Яскраві помаранчеві самокати не залишаються поза увагою городян та рекламують самі себе</div>
+                                </div>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="third-advantages-item">
+                                    <div class="advantage-number">03</div>
+                                    <div class="third-advantages-title">Швидкий<br> запуск</div>
+                                    <div class="third-advantages-text">Мобільний додаток та продумана бізнес-модель дозволяють запустити сервіс у будь-якому місті вже за 7 днів</div>
+                                </div>
+                            </div>
+                            <div class="advantages-item third">
+                                <div class="third-advantages-item">
+                                    <div class="advantage-number">04</div>
+                                    <div class="third-advantages-title">Високий<br> рівень захисту</div>
+                                    <div class="third-advantages-text">Вся техніка, що поставляється нами розроблена для умов дистанційної оренди, має високий рівень антивандального захисту і GPS-трекери</div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+            </section>
+            <section class="steps-section">
+                <div class="container">
+                    <div class="steps-wrap">
+                        <div class="subtitle pb100">Як буде збудовано ваш бізнес?</div>
+                        <div class="steps-item">
+                            <div class="steps-icon"><img src="./assets/img/orange-arrow.svg" alt=""></div>
+                            <div class="steps-descr">
+                                <div class="steps-title">1 Етап</div>
+                                <div class="steps-text">Ви отримаєте спеціально розроблену та спроектовану техніку з вмонтованими GPS-трекерами та блокаторами;</div>
+                            </div>
+                        </div>
+                        <div class="steps-item">
+                            <div class="steps-icon-second"><img src="./assets/img/orange-arrow.svg" alt=""></div>
+                            <div class="steps-descr">
+                                <div class="steps-title">2 Етап</div>
+                                <div class="steps-text">Ми надамо вам все програмне забезпечення, необхідне для роботи сервісу та навчимо працювати з ним. Всі оновлення та покращення ми беремо на себе;</div>
+                            </div>
+                        </div>
+                        <div class="steps-item">
+                            <div class="steps-icon"><img src="./assets/img/orange-arrow.svg" alt=""></div>
+                            <div class="steps-descr">
+                                <div class="steps-title">3 Етап</div>
+                                <div class="steps-text">Ваші клієнти встановлять мобільний додаток на свої смартфони та за допомогою нього орендуватимуть техніку;</div>
+                            </div>
+                        </div>
+                        <div class="steps-item">
+                            <div class="steps-icon-fourth"><img src="./assets/img/orange-arrow.svg" alt=""></div>
+                            <div class="steps-descr">
+                                <div class="steps-title">4 Етап</div>
+                                <div class="steps-text">Ви організуєте роботу служби безпеки та сервісного відділу, отримуючи стабільний прибуток від шерингу.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="faq-section">
+                <div class="container">
+                    <div class="subtitle">Часті запитання</div>
+                    <div class="accordion-wrap">
+                        <button class="accordion">
+                            <p>Як домовитися з муніципальною владою?</p>
+                        </button>
+                        <div class="panel">
+                            <p>Шеринговий сервіс - це неминуча частина еволюції будь-якого сучасного міста, тому будь-який освічений чиновник тільки вітатиме появу такого сервісу. Ми допоможемо вам донести до влади переваги нашого сервісу та вирішити питання, пов'язані з організацією цього виду діяльності.
+                            </p>
+                        </div>
+
+                        <button class="accordion">
+                            <p>Як вчасно дізнатися, що техніка зламана?</p>
+                        </button>
+                        <div class="panel">
+                            <p>Щоразу, коли клієнт братиме техніку в оренду, він оглядатиме її на предмет несправностей і проблем (наприклад, розбита фара, або погнуте кермо), адже в момент оренди відповідальність лягає на нього. Тому ви будете оперативно дізнаватися про всі проблеми безпосередньо від клієнтів.</p>
+                        </div>
+
+                        <button class="accordion">
+                            <p>Як боротися з вандалами та злодіями?</p>
+                        </button>
+                        <div class="panel">
+                            <p>Фундамент проекту – це IT-платформа, за допомогою якої відстежуються усі необхідні метрики. Завдяки GPS-трекерам, ви завжди знатимете
+                                місцезнаходження техніки, а система тривог попередить вас про спроби крадіжки або акти вандалізму.
+                            </p>
+                        </div>
+                        <button class="accordion">
+                            <p>Чи потрібний мені IT-фахівець або розробник?</p>
+                        </button>
+                        <div class="panel">
+                            <p>Ні. Ми беремо на себе обслуговування та оновлення програмного забезпечення, вам не потрібно наймати IT-фахівця. Більше того, якщо вам знадобляться якісь функції, які не передбачені в системі, є можливість доопрацювання спеціально під ваші потреби нашими фахівцями.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-us-section">
+                <div class="container">
+                    <div class="about-us-wrap">
+                        <div class="about-us-descr">
+                            <div class="subtitle">Про нас</div>
+                            <div class="about-text">"Ми витратили 2 роки і більше 100 000 доларів, аби створити ефективну бізнес модель"</div>
+                            <div class="about-autor">Олександр Кириченко</div>
+                            <div class="about-small-text">Засновник компанії "ПРОКАТайся"</div>
+                            <div class="about-social">
+                                <a href="https://instagram.com/sashakir13?igshid=NWRhNmQxMjQ=" class="about-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 0.5C24.1421 0.5 27.5 3.85787 27.5 8V20C27.5 24.1421 24.1421 27.5 20 27.5H8C3.85787 27.5 0.5 24.1421 0.5 20V8C0.5 3.85787 3.85787 0.5 8 0.5H20ZM14 8C10.6863 8 8 10.6863 8 14C8 17.3137 10.6863 20 14 20C17.3137 20 20 17.3137 20 14C20 10.6863 17.3137 8 14 8ZM14 11C15.6569 11 17 12.3431 17 14C17 15.6569 15.6569 17 14 17C12.3431 17 11 15.6569 11 14C11 12.3431 12.3431 11 14 11ZM20.75 5.75C19.9216 5.75 19.25 6.42158 19.25 7.25C19.25 8.07842 19.9216 8.75 20.75 8.75C21.5784 8.75 22.25 8.07842 22.25 7.25C22.25 6.42158 21.5784 5.75 20.75 5.75Z" />
+                                    </svg>
+                                </a>
+                                <a href="https://t.me/kyrychenko_o_m" class="about-icon"><svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M27.6659 0.644639C29.2978 -0.0424659 31.0472 1.33743 30.7591 3.08446L27.3557 23.7195C27.0275 25.7091 24.8423 26.8508 23.017 25.8593C21.4895 25.0296 19.2233 23.7527 17.1809 22.4181C16.1611 21.7517 13.0382 19.6148 13.4221 18.0936C13.7503 16.793 19.0001 11.9061 22.0001 8.99988C23.1785 7.85827 22.6418 7.19877 21.2501 8.24988C17.7977 10.8573 12.255 14.8217 10.422 15.9374C8.80484 16.9217 7.96046 17.0897 6.95328 16.9217C5.11409 16.6152 3.40893 16.1406 2.01681 15.5636C0.135259 14.7836 0.226909 12.1979 2.01554 11.4449L27.6659 0.644639Z" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="about-img"><img src="./assets/img/insta-img.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-tariffs">
+                <div class="container">
+                    <div class="subtitle">Варіанти партнерства</div>
+                    <div class="tariffs-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tariffs-slide">
+                                    <div class="tariff-title">Франшиза</div>
+                                    <div class="tariff-text">Запустити власний шерінг електросамокатів під нашим брендом в будь-якому місті</div>
+                                    <ul class="tariff-advantage">
+                                        <li class="tarriff-advantage-item">Запуск від 1-го до 3-ох тижнів</li>
+                                        <li class="tarriff-advantage-item">Старт від одного самокату</li>
+                                        <li class="tarriff-advantage-item">Окупність від 3-ох місяців</li>
+                                    </ul>
+                                    <a href="#" data-scroll-to="form-section-wrap" class="tariff-btn">Отримати пропозицію</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tariffs-slide">
+                                    <div class="tariff-title">Власний бренд</div>
+                                    <div class="tariff-text">Створити власний бренд найприбутковішого бізнесу сучасності</div>
+                                    <ul class="tariff-advantage">
+                                        <li class="tarriff-advantage-item">Запуск від 2 до 8 тижнів</li>
+                                        <li class="tarriff-advantage-item">Розширюй простори без обмежень</li>
+                                        <li class="tarriff-advantage-item">Окупність від 6-ох місяців</li>
+                                    </ul>
+                                    <a href="#" data-scroll-to="form-section-wrap" class="tariff-btn">Отримати пропозицію</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide  third">
+                                <div class="tariffs-slide">
+                                    <div class="tariff-title">Інвестиції</div>
+                                    <div class="tariff-text">Отримуй найбільший % пасивного прибутку на ринку</div>
+                                    <ul class="tariff-advantage">
+                                        <li class="tarriff-advantage-item">Отримай х2 від вкладених інвестицій</li>
+                                        <li class="tarriff-advantage-item">Окупність від 6 місяців</li>
+                                        <li class="tarriff-advantage-item">Відпочивай, коли гроші працюють за тебе</li>
+                                    </ul>
+                                    <a href="#" data-scroll-to="form-section-wrap" class="tariff-btn">Отримати пропозицію</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-more-text">
+                <div class="container">
+                    <div class="text-wrap">
+
+                        <div class="subtitle">SEO заголовок</div>
+                        <p>Lorem ipsum dolor sit amet. In vero natus ea dolor molestiae et dolorem error sed nostrum tenetur quo tenetur praesentium. Aut enim aliquam et itaque modi ut doloremque fugit eos ipsam temporibus! </p>
+                        <p>Et eaque voluptate et veniam nostrum id nesciunt adipisci et eaque tenetur id nisi assumenda qui quia perspiciatis. Ut exercitationem quos ab quod laudantium ut obcaecati dolor ut aperiam eaque non vitae error hic commodi accusantium ut rerum accusantium. In eius unde a earum animi ut vero eaque qui expedita voluptatum ut modi praesentium eum saepe harum. </p>
+                        <div class="tariff-title">SEO-підзагловок</div>
+                        <p>In minima blanditiis in accusantium omnis eos quasi perspiciatis id cupiditate quam ea alias amet est voluptates numquam ea illum minima. Cum totam veritatis At quisquam labore qui odio molestias et voluptatibus illo ea error explicabo qui molestias laudantium aut voluptatibus doloribus. </p>
+                        <ul>
+                            <li>Et rerum repudiandae ab corporis dolores. </li>
+                            <li>Eos laborum laboriosam qui sunt dicta? </li>
+                            <li>Sit totam illo aut consequatur eius et quae tenetur? </li>
+                            <li>Qui autem minima nam fuga rerum. </li>
+                        </ul>
+
+
+                        <span id="dots"></span><span id="more">
+                            <div class="tariff-title">SEO-підзагловок</div>
+                            <p>Lorem ipsum dolor sit amet. In vero natus ea dolor molestiae et dolorem error sed nostrum tenetur quo tenetur praesentium. Aut enim aliquam et itaque modi ut doloremque fugit eos ipsam temporibus! </p>
+                            <p>Et eaque voluptate et veniam nostrum id nesciunt adipisci et eaque tenetur id nisi assumenda qui quia perspiciatis. Ut exercitationem quos ab quod laudantium ut obcaecati dolor ut aperiam eaque non vitae error hic commodi accusantium ut rerum accusantium. In eius unde a earum animi ut vero eaque qui expedita voluptatum ut modi praesentium eum saepe harum. </p>
+                            <ol>
+                                <li>Est cupiditate expedita et architecto enim. </li>
+                                <li>Quo saepe obcaecati ut nostrum sunt. </li>
+                                <li>Quo enim tempore et tempora voluptatem. </li>
+                                <li>Ea vero blanditiis ea dolore debitis et laudantium dolor. </li>
+                                <li>Ad quaerat harum et saepe sint. </li>
+                            </ol>
+                            <p>In minima blanditiis in accusantium omnis eos quasi perspiciatis id cupiditate quam ea alias amet est voluptates numquam ea illum minima. Cum totam veritatis At quisquam labore qui odio molestias et voluptatibus illo ea error explicabo qui molestias laudantium aut voluptatibus doloribus. </p>
+                            <ul>
+                                <li>Et rerum repudiandae ab corporis dolores. </li>
+                                <li>Eos laborum laboriosam qui sunt dicta? </li>
+                                <li>Sit totam illo aut consequatur eius et quae tenetur? </li>
+                                <li>Qui autem minima nam fuga rerum. </li>
+                            </ul>
+
+
+
+                        </span></p>
+                        <button onclick="myFunction()" id="myBtn">Читати більше</button>
+                    </div>
+
+                </div>
+            </section>
+            <section class="form-section">
+                <div class="container">
+                    <div class="form-section-wrap">
+                        <div class="form-wrap">
+                            <div class="subtitle">Відкрийте бізнес</div>
+                            <div class="form-text">який змінить ваше місто та заробляйте від 200 000 гривень на місяць!</div>
+                            <form action="sender.php" method="post">
+                                <input type="text" class="name" name="name" placeholder="Iм'я" required>
+                                <input type="text" class="phone" name="phone" placeholder="Телефон" required>
+                                <input type="text" class="mail" name="email" placeholder="E-mail">
+                                <button type="button" class="send-form form-btn">Відправити</button>
+                                <div class="status"></div>
+                            </form>
+                        </div>
+                        <div class="form-img"><img src="./assets/img/scooter-img.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+       
+    </div>
+    <footer>
+       <div class="container">
+           <div class="footer-first-line">
+               <div class="logo"><img src="./assets/img/logo-white.svg" alt=""></div>
+               <div class="footer-social">
+                   <a href="https://instagram.com/sashakir13?igshid=NWRhNmQxMjQ=" class="about-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M20 0.5C24.1421 0.5 27.5 3.85787 27.5 8V20C27.5 24.1421 24.1421 27.5 20 27.5H8C3.85787 27.5 0.5 24.1421 0.5 20V8C0.5 3.85787 3.85787 0.5 8 0.5H20ZM14 8C10.6863 8 8 10.6863 8 14C8 17.3137 10.6863 20 14 20C17.3137 20 20 17.3137 20 14C20 10.6863 17.3137 8 14 8ZM14 11C15.6569 11 17 12.3431 17 14C17 15.6569 15.6569 17 14 17C12.3431 17 11 15.6569 11 14C11 12.3431 12.3431 11 14 11ZM20.75 5.75C19.9216 5.75 19.25 6.42158 19.25 7.25C19.25 8.07842 19.9216 8.75 20.75 8.75C21.5784 8.75 22.25 8.07842 22.25 7.25C22.25 6.42158 21.5784 5.75 20.75 5.75Z" />
+                       </svg>
+                   </a>
+                   <a href="https://t.me/kyrychenko_o_m" class="about-icon"><svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M27.6659 0.644639C29.2978 -0.0424659 31.0472 1.33743 30.7591 3.08446L27.3557 23.7195C27.0275 25.7091 24.8423 26.8508 23.017 25.8593C21.4895 25.0296 19.2233 23.7527 17.1809 22.4181C16.1611 21.7517 13.0382 19.6148 13.4221 18.0936C13.7503 16.793 19.0001 11.9061 22.0001 8.99988C23.1785 7.85827 22.6418 7.19877 21.2501 8.24988C17.7977 10.8573 12.255 14.8217 10.422 15.9374C8.80484 16.9217 7.96046 17.0897 6.95328 16.9217C5.11409 16.6152 3.40893 16.1406 2.01681 15.5636C0.135259 14.7836 0.226909 12.1979 2.01554 11.4449L27.6659 0.644639Z" />
+                       </svg>
+
+                   </a>
+               </div>
+           </div>
+           <div class="footer-second-line">
+               <div class="footer-txt">Google Play і логотип Google Play є торговельними марками корпорації Google LLC. Apple та Apple logo є торговельними марками Apple Inc., зареєстрованими в США та інших країнах. App Store є торговельною маркою Apple Inc.</div>
+               <div class="footer-contacts">
+                   <a href="mailto:prokataisya.sharing@gmail.com" class="footer-contact"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M18.9583 3.25C21.5738 3.25 23.7082 5.30967 23.828 7.89551L23.8333 8.125V16.25C23.8333 17.3923 22.9495 18.328 21.8283 18.4107L21.6666 18.4167H18.4166V21.6667C18.4166 22.265 17.9316 22.75 17.3333 22.75C16.7777 22.75 16.3198 22.3318 16.2572 21.793L16.25 21.6667V18.4167H4.33329C3.19107 18.4167 2.25528 17.5328 2.17257 16.4117L2.16663 16.25V8.125C2.16663 5.50954 4.2263 3.37514 6.81214 3.25531L7.04163 3.25H18.9583ZM7.04163 5.41667C5.54586 5.41667 4.33329 6.62923 4.33329 8.125V16.25H9.74996V8.125C9.74996 6.62923 8.5374 5.41667 7.04163 5.41667ZM7.58329 8.66667C8.1816 8.66667 8.66663 9.1517 8.66663 9.75C8.66663 10.3056 8.24841 10.7635 7.70963 10.826L7.58329 10.8333H6.49996C5.90166 10.8333 5.41663 10.3483 5.41663 9.75C5.41663 9.19443 5.83484 8.73654 6.37362 8.67396L6.49996 8.66667H7.58329Z" fill="#F68444" />
+                       </svg>
+                       prokataisya.sharing@gmail.com
+                   </a>
+                   <a href="tel:+380972157721" class="footer-contact"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9317 23.9768C16.3707 23.9194 11.9499 23.309 7.32046 18.6795C2.69096 14.05 2.08061 9.62928 2.02317 8.06825C1.93564 5.68983 3.75759 3.37888 5.86316 2.47649C6.35723 2.26474 6.95565 2.3035 7.42872 2.64857C9.16074 3.91197 10.3574 5.82215 11.3848 7.32507C11.8489 8.00398 11.7379 8.93094 11.1075 9.47664L8.9938 11.0465C8.7843 11.202 8.71464 11.4848 8.84029 11.7135C9.31853 12.584 10.1705 13.8795 11.1455 14.8545C12.1215 15.8305 13.4782 16.7374 14.4086 17.2696C14.6498 17.4076 14.9533 17.3276 15.1058 17.0953L16.4809 15.0007C17.0081 14.299 17.9929 14.1457 18.7086 14.6411C20.2334 15.6963 22.012 16.8714 23.3144 18.5393C23.6844 19.0132 23.7394 19.6329 23.5187 20.1479C22.6122 22.2632 20.3181 24.0647 17.9317 23.9768Z" fill="#F68444" />
+                       </svg>
+                       +38 (097) 215-77-21
+                   </a>
+               </div>
+           </div>
+           <div class="footer-third-line">
+               <div class="footer-text">© 2023 ПРОКАТайся</div>
+               <div class="footer-links">
+                   <a href="./politics.php">Політика конфідеційності</a>
+                   <a href="./dogovir.php">Договір оренди</a>
+               </div>
+           </div>
+
+       </div>
+   </footer>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="./assets/js/jquery.validate.min.js"></script>
+   <script src="./assets/js/jquery.maskedinput.js"></script>
+   <script src="./assets/js/wow.min.js"></script>
+
+   <!-- https://github.com/verlok/vanilla-lazyload#-getting-started---html -->
+   <script src="./assets/js/lazyload.js"></script>
+
+
+   <script src="https://www.youtube.com/iframe_api"></script>
+   <script src="./assets/js/script.js"></script>
+
+   <link rel="stylesheet" href="/assets/css/swiper/swiper-bundle.min.css">
+   <script src="/assets/js/swiper/swiper-bundle.min.js"></script>
+
+   <script>
+       var lazyLoadInstance = new LazyLoad({});
+
+       var swiper = new Swiper('.advantages-slider', {
+           observer: true,
+           observeParents: true,
+           navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+           },
+
+           spaceBetween: 45,
+
+
+           breakpoints: {
+               300: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               320: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               567: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               767: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               991: {
+                   slidesPerView: 1,
+                   allowSlideNext: true,
+                   allowSlidePrev: true,
+                   spaceBetween: 0,
+               },
+               1024: {
+                   allowSlideNext: false,
+                   allowSlidePrev: false,
+               },
+           },
+       });
+
+       var swiper = new Swiper('.tariffs-slider', {
+           observer: true,
+           observeParents: true,
+           navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+           },
+
+
+           spaceBetween: 40,
+
+
+           breakpoints: {
+               300: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               320: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               567: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               767: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               991: {
+                   slidesPerView: 1,
+                   allowSlideNext: true,
+                   allowSlidePrev: true,
+                   spaceBetween: 30,
+               },
+               1024: {
+                   slidesPerView: 3,
+                   allowSlideNext: false,
+                   allowSlidePrev: false,
+               },
+           },
+       });
+       var swiper = new Swiper('.app-slider', {
+           observer: true,
+           observeParents: true,
+           loop: true,
+           pagination: {
+               el: ".swiper-pagination",
+               clickable: true,
+           },
+           autoplay: {
+               delay: 4000,
+           },
+
+           spaceBetween: 40,
+           breakpoints: {
+               300: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               320: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               567: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               767: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               991: {
+                   slidesPerView: 1,
+
+                   spaceBetween: 30,
+               },
+               1024: {
+                   slidesPerView: 1,
+
+               },
+           },
+       });
+       var swiper = new Swiper('.gallery-slider', {
+           observer: true,
+           observeParents: true,
+           loop: true,
+           pagination: {
+               el: ".swiper-pagination",
+               clickable: true,
+           },
+           autoplay: {
+               delay: 4000,
+           },
+
+           spaceBetween: 40,
+           breakpoints: {
+               300: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               320: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               567: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               767: {
+                   slidesPerGroup: 1,
+                   slidesPerView: 1,
+                   spaceBetween: 30,
+               },
+               991: {
+                   slidesPerView: 1,
+
+                   spaceBetween: 30,
+               },
+               1024: {
+                   slidesPerView: 1,
+
+               },
+           },
+       });
+   </script>
+
+
+   </body>
+
+   </html>
+    <!-- popup-menu -->
+    <div class="popup popup-menu-two">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content popup__content--fluid popup__content--centered">
+                    <button class="btn-close popup__btn-close popup-close"></button>
+                    <nav class="mobile-menu popup__mobile-menu">
+                        <ul class="mobile-menu__ul">
+                            <li class="mobile-menu__li">
+                                <a class="mobile-menu__link popup-close" href="#" data-scroll-to="advantages-slider">Чому ми</a>
+                            </li>
+                            <li class="mobile-menu__li">
+                                <a class="mobile-menu__link popup-close" href="#" data-scroll-to="third-advantages-wrap">Переваги</a>
+                            </li>
+                            <li class="mobile-menu__li">
+                                <a class="mobile-menu__link popup-close" href="#" data-scroll-to="steps-wrap">Етапи</a>
+                            </li>
+                            <li class="mobile-menu__li">
+                                <a class="mobile-menu__link popup-close" href="#" data-scroll-to="faq-section">FAQ</a>
+                            </li>
+                            <li class="mobile-menu__li">
+                                <a class="mobile-menu__link popup-close" href="#" data-scroll-to="about-us-wrap">Про нас</a>
+                            </li>
+                            <li class="mobile-menu__li">
+                                <a class="mobile-menu__link popup-close" href="#" data-scroll-to="tariffs-slider">Тарифи</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="phone popup__phone">
+                        <a class="phone__item phone__item--accent" href="tel:+380972157721">+38 (097) 215-77-21</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/sashakir13?igshid=NWRhNmQxMjQ=" class="about-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 0.5C24.1421 0.5 27.5 3.85787 27.5 8V20C27.5 24.1421 24.1421 27.5 20 27.5H8C3.85787 27.5 0.5 24.1421 0.5 20V8C0.5 3.85787 3.85787 0.5 8 0.5H20ZM14 8C10.6863 8 8 10.6863 8 14C8 17.3137 10.6863 20 14 20C17.3137 20 20 17.3137 20 14C20 10.6863 17.3137 8 14 8ZM14 11C15.6569 11 17 12.3431 17 14C17 15.6569 15.6569 17 14 17C12.3431 17 11 15.6569 11 14C11 12.3431 12.3431 11 14 11ZM20.75 5.75C19.9216 5.75 19.25 6.42158 19.25 7.25C19.25 8.07842 19.9216 8.75 20.75 8.75C21.5784 8.75 22.25 8.07842 22.25 7.25C22.25 6.42158 21.5784 5.75 20.75 5.75Z" />
+                            </svg>
+                        </a>
+                        <a href="https://t.me/kyrychenko_o_m" class="about-icon"><svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.6659 0.644639C29.2978 -0.0424659 31.0472 1.33743 30.7591 3.08446L27.3557 23.7195C27.0275 25.7091 24.8423 26.8508 23.017 25.8593C21.4895 25.0296 19.2233 23.7527 17.1809 22.4181C16.1611 21.7517 13.0382 19.6148 13.4221 18.0936C13.7503 16.793 19.0001 11.9061 22.0001 8.99988C23.1785 7.85827 22.6418 7.19877 21.2501 8.24988C17.7977 10.8573 12.255 14.8217 10.422 15.9374C8.80484 16.9217 7.96046 17.0897 6.95328 16.9217C5.11409 16.6152 3.40893 16.1406 2.01681 15.5636C0.135259 14.7836 0.226909 12.1979 2.01554 11.4449L27.6659 0.644639Z" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
